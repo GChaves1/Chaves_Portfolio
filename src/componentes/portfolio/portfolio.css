@@ -1,0 +1,150 @@
+.portfolio__container {
+  max-width: 668px;
+}
+
+
+.portfolio__content {
+  display: flex;
+  box-shadow: 1px solid var(--shadow-15);
+
+}
+
+.portfolio__tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: var(--mb-2);
+}
+
+.portfolio__info {
+  display: grid;
+  grid-template-columns: repeat(2, 300px);
+  column-gap: 1.5rem;
+}
+
+.portfolio__item {
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
+  color: var(--title-color);
+  margin: 0 var(--mb-1);
+  cursor: pointer;
+}
+
+.portfolio__button-filter {
+  background-color: var(--body-color);
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
+  padding: .5rem;
+  color: var(--title-color);
+  margin: 0 var(--mb-1);
+  cursor: pointer;
+}
+
+.portfolio__button {
+  font-size: var(--smaller-font-size);
+  font-weight: var(--font-medium);
+  color: var(--text-color);
+  margin: 0 var(--mb-1);
+  cursor: pointer;
+  padding: .5rem;
+}
+
+.portfolio__item:hover {
+  background-color: var(--body-color);
+  border-radius: 1.125rem;
+  align-items: center;
+
+}
+
+.portfolio__item:active {
+  background-color: (--title-color);
+}
+
+.portfolio__button-item {
+  margin-left: var(--mb-0-5);
+}
+
+.portfolio__card {
+  background-color: var(--container-color);
+  border: 1px solid var(--border-0-1);
+  margin-bottom: 2rem;
+  border-radius: 2rem;
+  text-align: center;
+}
+
+.portfolio__img {
+  width: 100%;
+  border-radius: 2rem;
+  border: 1px solid var(--border-0-1); 
+}
+
+.portfolio__name {
+  display: inline-block;
+  font-size: var(--small-font-size);
+  text-align: center;
+}
+
+
+/*---------- PONTOS DE QUEBRA ----------*/
+
+/* telas largas */
+@media screen and (max-width:992px) {
+  .portfolio__container {
+    margin: auto;
+  }
+}
+
+/* telas medias */
+@media screen and (max-width:768px) {
+  .portfolio__container {
+    margin: 0 auto;
+  }
+
+  .portfolio__tabs {
+    display: flex;
+
+    margin: 0 2.5rem;
+  }
+}
+
+@media screen and (max-width:576px) {
+  .portfolio__info {
+    display: inline-block;
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .portfolio__card{
+    margin: 1rem 2rem;
+  }
+
+  .portfolio__tabs {
+        justify-content: space-between;
+  }
+}
+
+/* telas pequenas */
+@media screen and (max-width:350px) {
+  .portfolio__button-item {
+    font-size: 1rem;
+    margin: 0 var(--mb-1);
+  }
+
+  .button--flex {
+    display: inline;
+  }
+}
+
+@media screen and (max-width:320px){
+  .portfolio__tabs {
+    margin: 0 auto;
+    justify-content: space-around;
+  }
+
+  .portfolio__item {
+    margin: 0 var(--mb-0-75);
+  }
+  .portfolio__card {
+    padding: 0;
+    margin: 1rem;
+  }
+}
