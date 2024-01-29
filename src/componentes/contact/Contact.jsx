@@ -48,7 +48,7 @@ const Contact = () => {
               contact__button-icon"></i></span>
             </a>
 
-            <a href="https://www.linkedin.com/in/gabriel-chaves-20682619a/" className="contact__card">
+            <a href="https://www.linkedin.com/in/devchaves/" className="contact__card">
               <i className="bx bxl-linkedin contact__card-icon"></i>
 
               <h3 className="contact__card-title">Linkedin</h3>
