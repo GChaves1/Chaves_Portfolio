@@ -6,7 +6,7 @@ export const Info = () => {
 
       <div className="about__box">
       <i class="uil uil-book-open about__icon"></i>
-        <h3 className="about__title">Tempo de Estudo</h3>
+        <h3 className="about__title">Estudo</h3>
         <span className="about__subtitle">1 Ano e <br/>6  meses </span>
       </div>
 
